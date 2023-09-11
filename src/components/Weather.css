@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+     width: 100vw;
+     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../assets/weatherbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+
+     
+}
+.box{
+     width: 40vw;
+     height: 500px;
+     border: 1px solid black;
+     border-radius: 9px;
+    text-align: center;
+    background: url(../assets/weatherimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    opacity: 0.9;
+  
+     
+}
+.winform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.search{
+    margin-top: 4rem;
+   
+}
+
+.search  input[type=search] {
+    
+    border: 1px solid black;
+    box-sizing:border-box;
+    font-size:20px;
+    height:30px;
+    border-radius: 8px;
+    padding: 5px;
+   
+    &:focus {
+      border:solid 1px black;      
+      outline: black;
+    }
+  }
+  .image img{
+    width: 70px;
+ 
+
+  }
+
+  .temp p{
+    padding:0 4rem ;
+    
+  }
+  .cityinform{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+  } 
+
+  @media screen and (max-width:1000px){
+    .box{
+      width: 88vw;
+      height: 50vh;
+    }
+  }
+  @media screen and (max-width:700px){
+    .box{
+      width: 88vw;
+      height: 70vh;
+    }
+  }
